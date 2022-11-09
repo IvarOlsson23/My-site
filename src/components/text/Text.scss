@@ -1,0 +1,6 @@
+@import "../../Theme.scss";
+
+.text-wrapper {
+  text-align: left;
+  @extend .font-package-body;
+}

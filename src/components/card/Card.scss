@@ -1,0 +1,43 @@
+@import "../../Theme.scss";
+
+.card {
+  height: 360px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  gap: 100px;
+}
+
+.content {
+  width: 500px;
+  text-align: left;
+  padding: 20px;
+}
+
+.image {
+  max-width: 700px;
+}
+
+.image img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 900px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    width: 250px;
+  }
+  .content {
+    align-items: left;
+    width: 300px;
+  }
+  .image img {
+    width: 300px;
+  }
+}

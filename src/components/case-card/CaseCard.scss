@@ -1,0 +1,60 @@
+@import "../../Theme.scss";
+
+.casecard {
+  height: 360px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 130px;
+  margin-bottom: 130px;
+  gap: 100px;
+}
+
+.casecard-images {
+  max-width: 700px;
+  display: flex;
+}
+
+.casecard-content {
+  width: 500px;
+  text-align: left;
+  padding: 20px;
+}
+
+.casecard-images img {
+  height: 100%;
+  width: 100%;
+  margin: 20px;
+  border-radius: 20px;
+  box-shadow: rgba(10, 10, 10, 0.8) 15px 5px 15px;
+  border: solid 6px rgb(12, 12, 12);
+}
+
+#casecard-image-left {
+  position: relative;
+  top: 40px;
+}
+
+@media screen and (max-width: 900px) {
+  .casecard {
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 130px;
+    margin-bottom: 130px;
+    gap: 100px;
+  }
+  .casecard-content {
+    width: 100%;
+  }
+  .casecard-images {
+    display: flex;
+    justify-content: center;
+  }
+  .casecard-images img {
+    height: 40%;
+    width: 40%;
+    margin: 5px;
+  }
+}

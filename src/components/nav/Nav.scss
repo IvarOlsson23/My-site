@@ -1,0 +1,26 @@
+@import "../../Theme.scss";
+
+.nav {
+  background-color: red;
+  width: 80%;
+  height: 50px;
+  margin: auto;
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 30px;
+  margin-bottom: 100px;
+  margin-top: 20px;
+  background-color: white;
+  background: rgb(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+span:first-child {
+  margin-right: auto;
+}
+
+.nav span {
+  @extend .font-package-button;
+}

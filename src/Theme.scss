@@ -1,0 +1,118 @@
+// COLORS //
+
+//Dark theme
+$RichBlack: #0c0e13;
+$RaisinBlack: #281b1c;
+$TerraCotta: #e87258;
+$White: #ffffff;
+
+//Light theme
+$QueenBlue: #4167a0;
+$LightSkyBlue: #74cdff;
+
+// TYPOGRAPHY //
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+
+//font size
+$heading-1-font-size: 86px;
+$heading-2-font-size: 64px;
+$heading-3-font-size: 52px;
+$body-font-size: 16px;
+$caption-font-size: 16px;
+$button-font-size: 14px;
+
+//line height
+$heading-1-line-height: 108px;
+$heading-2-line-height: 80px;
+$heading-3-line-height: 65px;
+$body-line-height: 20px;
+$caption-line-height: 20px;
+$button-line-height: 16px;
+
+//font weight
+$heading-1-font-weight: 100;
+$heading-2-font-weight: 100;
+$heading-3-font-weight: 100;
+$body-font-weight: 200;
+$caption-font-weight: 400;
+$button-font-weight: 200;
+
+//letter spacing
+$heading-1-letter-spacing: 0;
+$heading-2-letter-spacing: 0;
+$heading-3-letter-spacing: 0;
+$body-letter-spacing: 1px;
+$caption-letter-spacing: 0;
+$button-letter-spacing: 6px;
+
+// Font packages and color schemes
+
+.font-package-button {
+  font-size: $button-font-size;
+  font-weight: $button-font-weight;
+  line-height: $button-line-height;
+  letter-spacing: $button-letter-spacing;
+}
+
+.font-package-body {
+  font-size: $body-font-size;
+  font-weight: $body-font-weight;
+  line-height: $body-line-height;
+  letter-spacing: $body-letter-spacing;
+}
+
+.color-scheme-1 {
+  background-color: $RichBlack;
+}
+
+.color-scheme-2 {
+  background-color: $RichBlack;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sora", sans-serif;
+}
+
+body {
+  min-height: 120vh;
+  text-align: center;
+  background-color: $RichBlack;
+
+  background: radial-gradient(
+    circle farthest-corner at 150% -50%,
+    #e87258,
+    #8b4435,
+    $RichBlack,
+    $RichBlack,
+    $RichBlack
+  );
+}
+
+.App {
+  color: white;
+}
+
+.page-section-1 {
+  background: rgb(255, 255, 255, 0.05);
+  padding: 30px;
+}
+
+.page-section-2 {
+  padding: 30px;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    background: radial-gradient(
+      circle farthest-corner at 300% -50%,
+      #e87258,
+      #8b4435,
+      $RichBlack,
+      $RichBlack,
+      $RichBlack
+    );
+  }
+}
