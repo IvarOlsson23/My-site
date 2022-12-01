@@ -8,7 +8,7 @@ const Card = (props) => {
     <div className="card">
       <div className="content">
         <Heading className="card-heading" heading={props.heading} />
-        <Text text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut labore et doloreut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut labore et doloreut labore et dolore magna aliqua. Ut enim ad minim veniam" />
+        <Text text={props.text} />
       </div>
       <div className="image">
         <img className="card-image" src={props.imageSource} alt=""></img>

@@ -20,6 +20,13 @@ $heading-3-font-size: 52px;
 $body-font-size: 16px;
 $caption-font-size: 16px;
 $button-font-size: 14px;
+//Mobile
+$heading-1-font-size-mobile: 86px;
+$heading-2-font-size-mobile: 64px;
+$heading-3-font-size-mobile: 52px;
+$body-font-size-mobile: 16px;
+$caption-font-size-mobile: 16px;
+$button-font-size-mobile: 12px;
 
 //line height
 $heading-1-line-height: 108px;
@@ -28,6 +35,13 @@ $heading-3-line-height: 65px;
 $body-line-height: 20px;
 $caption-line-height: 20px;
 $button-line-height: 16px;
+//Mobile
+$heading-1-line-height-mobile: 108px;
+$heading-2-line-height-mobile: 80px;
+$heading-3-line-height-mobile: 65px;
+$body-line-height-mobile: 20px;
+$caption-line-height-mobile: 20px;
+$button-line-height-mobile: 14px;
 
 //font weight
 $heading-1-font-weight: 100;
@@ -36,6 +50,13 @@ $heading-3-font-weight: 100;
 $body-font-weight: 200;
 $caption-font-weight: 400;
 $button-font-weight: 200;
+//Mobile
+$heading-1-font-weight-mobile: 100;
+$heading-2-font-weight-mobile: 100;
+$heading-3-font-weight-mobile: 100;
+$body-font-weight-mobile: 200;
+$caption-font-weight-mobile: 400;
+$button-font-weight-mobile: 200;
 
 //letter spacing
 $heading-1-letter-spacing: 0;
@@ -44,6 +65,13 @@ $heading-3-letter-spacing: 0;
 $body-letter-spacing: 1px;
 $caption-letter-spacing: 0;
 $button-letter-spacing: 6px;
+//Mobile
+$heading-1-letter-spacing-mobile: 0;
+$heading-2-letter-spacing-mobile: 0;
+$heading-3-letter-spacing-mobile: 0;
+$body-letter-spacing-mobile: 1px;
+$caption-letter-spacing-mobile: 0;
+$button-letter-spacing-mobile: 6px;
 
 // Font packages and color schemes
 
@@ -61,14 +89,6 @@ $button-letter-spacing: 6px;
   letter-spacing: $body-letter-spacing;
 }
 
-.color-scheme-1 {
-  background-color: $RichBlack;
-}
-
-.color-scheme-2 {
-  background-color: $RichBlack;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -77,9 +97,15 @@ $button-letter-spacing: 6px;
 }
 
 body {
+}
+
+.App {
+}
+
+#dark {
+  color: white;
   min-height: 120vh;
   text-align: center;
-  background-color: $RichBlack;
 
   background: radial-gradient(
     circle farthest-corner at 150% -50%,
@@ -91,8 +117,19 @@ body {
   );
 }
 
-.App {
-  color: white;
+#light {
+  color: black;
+  min-height: 120vh;
+  text-align: center;
+
+  background: radial-gradient(
+    circle farthest-corner at 150% -50%,
+    #6fb4c0,
+    #3c8491,
+    white,
+    white,
+    white
+  );
 }
 
 .page-section-1 {
