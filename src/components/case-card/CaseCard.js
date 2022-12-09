@@ -8,7 +8,16 @@ const CaseCard = (props) => {
     <div className="casecard">
       <div className="casecard-content">
         <Heading className="casecard-heading" heading={props.heading} />
-        <Text text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut labore et doloreut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut labore et doloreut labore et dolore magna aliqua. Ut enim ad minim veniam" />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor
+          incididunt ut labore et doloreut labore et dolore magna aliqua. Ut
+          enim ad minim veniam Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, tempor incididunt ut labore et doloreut labore et
+          dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit
+          amet, consectetur adipiscing elit, tempor incididunt ut labore et
+          doloreut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem
+          ipsum dolor"
+        </p>
       </div>
       <div className="casecard-images">
         <img id="casecard-image-left" src={props.imageSource} alt=""></img>

@@ -1,6 +1,26 @@
 @import "../../Theme.scss";
 
 .text-wrapper {
-  text-align: left;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+
+  .text-block {
+    max-width: 550px;
+  }
   @extend .font-package-body;
+}
+
+@media screen and (max-width: 900px) {
+  .text-wrapper {
+    gap: 40px;
+    flex-direction: column;
+    margin: 0 50px 0 50px;
+  }
+  .text-block {
+    justify-content: center;
+    margin: auto;
+    height: 200px;
+  }
 }

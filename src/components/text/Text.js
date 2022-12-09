@@ -4,7 +4,8 @@ import "./Text.scss";
 const Text = (props) => {
   return (
     <div className="text-wrapper">
-      <p> {props.text} </p>
+      <p className="text-block"> {props.text1} </p>
+      <p className="text-block"> {props.text2} </p>
     </div>
   );
 };

@@ -20,7 +20,16 @@ const CaseCardVariant = (props) => {
       </div>
       <div className="casecard-variant-content">
         <Heading className="casecard-variant-heading" heading={props.heading} />
-        <Text text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut labore et doloreut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut labore et doloreut labore et dolore magna aliqua. Ut enim ad minim veniam" />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor
+          incididunt ut labore et doloreut labore et dolore magna aliqua. Ut
+          enim ad minim veniam Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, tempor incididunt ut labore et doloreut labore et
+          dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit
+          amet, consectetur adipiscing elit, tempor incididunt ut labore et
+          doloreut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem
+          ipsum dolor"
+        </p>
       </div>
     </div>
   );
