@@ -14,25 +14,28 @@ const Carousel = () => {
         <SwiperSlide>
           <CaseCard
             class="images"
-            heading="Hello!"
+            heading="This"
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-            imageSource={require("../../assets/case1.png")}
+            imageSource1={require("../../assets/case1.png")}
+            imageSource2={require("../../assets/case1.png")}
           />
         </SwiperSlide>
         <SwiperSlide>
           <CaseCard
             class="images"
-            heading="Hello!"
+            heading="That"
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-            imageSource={require("../../assets/case1.png")}
+            imageSource1={require("../../assets/case1.png")}
+            imageSource2={require("../../assets/case1.png")}
           />
         </SwiperSlide>
         <SwiperSlide>
           <CaseCard
             class="images"
-            heading="Hello!"
+            heading="Something"
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-            imageSource={require("../../assets/case1.png")}
+            imageSource1={require("../../assets/case1.png")}
+            imageSource2={require("../../assets/case1.png")}
           />
         </SwiperSlide>
       </Swiper>

@@ -6,7 +6,7 @@ const Card = (props) => {
   return (
     <div className="card">
       <div className="content">
-        <Heading className="card-heading" heading={props.heading} />
+        <Heading heading={props.heading} />
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor
           incididunt ut labore et doloreut labore et dolore magna aliqua. Ut

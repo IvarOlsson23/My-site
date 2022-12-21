@@ -2,11 +2,7 @@ import React from "react";
 import "./Heading.scss";
 
 const Heading = (props) => {
-  return (
-    <div className="heading">
-      <span> {props.heading} </span>
-    </div>
-  );
+  return <div className="heading">{props.heading}</div>;
 };
 
 export default Heading;

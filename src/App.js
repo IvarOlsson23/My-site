@@ -9,7 +9,7 @@ import CaseCard from "./components/case-card/CaseCard";
 import CaseCardVariant from "./components/case-card-variant/CaseCardVariant";
 import Carousel from "./components/Carousel/Carousel";
 import Footer from "./components/footer/footer";
-
+import ScrollIndicator from "./components/scroll-indicator/ScrollIndicator";
 export const ThemeContext = createContext(null);
 function App() {
   const [theme, setTheme] = useState("dark");
@@ -20,7 +20,11 @@ function App() {
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div className="App" id={theme}>
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
         <Nav></Nav>
+        <ScrollIndicator />
         <div className="toggle-btn-div" onClick={toggleTheme}>
           <Button type="button" text="Toggle mode" />
         </div>

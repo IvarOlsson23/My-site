@@ -20,8 +20,8 @@ const CaseCard = (props) => {
         </p>
       </div>
       <div className="casecard-images">
-        <img id="casecard-image-left" src={props.imageSource} alt=""></img>
-        <img id="casecard-image-right" src={props.imageSource} alt=""></img>
+        <img id="casecard-image-left" src={props.imageSource1} alt=""></img>
+        <img id="casecard-image-right" src={props.imageSource2} alt=""></img>
       </div>
     </div>
   );

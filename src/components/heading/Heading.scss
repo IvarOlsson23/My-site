@@ -1,6 +1,7 @@
+@import "../../Theme.scss";
+
 .heading {
-  font-size: 86px;
-  font-weight: 300;
+  @extend .font-package-heading;
 }
 
 @media screen and (max-width: 900px) {
