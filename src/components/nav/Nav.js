@@ -1,11 +1,21 @@
 import React from "react";
 import "./Nav.scss";
 import "../../";
-import Button from "../button/Button";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-
 const Nav = () => {
+  const [nav, setNav] = useState(false);
+
+  const changeBackground = () => {
+    if (window.scrollY >= 100) {
+      setNav(true);
+    } else {
+      setNav(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeBackground);
+
   const navRef = useRef();
   const navOpen = useRef();
 
@@ -13,11 +23,11 @@ const Nav = () => {
     navRef.current.classList.toggle("nav-toggle");
     navOpen.current.classList.toggle("nav-open");
   };
+
   return (
     <div className="nav-wrapper">
-      <div className="nav" ref={navRef}>
+      <div className={nav ? "nav active" : "nav"} ref={navRef}>
         <div alt="logo" className="logo" />
-
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <FaTimes />
         </button>
@@ -25,6 +35,9 @@ const Nav = () => {
           <a href="#about-me">About me</a>
           <a href="#about-me">Portfolio</a>
           <a href="#about-me">Contact</a>
+          {/* <div className="toggle-btn-div" onClick={toggleTheme}>
+            <Button type="button" text="Toggle mode" />
+          </div> */}
         </ul>
       </div>
       <button

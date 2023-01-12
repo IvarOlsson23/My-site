@@ -1,6 +1,8 @@
 @import "../../Theme.scss";
 
 .heading {
+  position: relative;
+  z-index: 2;
   @extend .font-package-heading;
 }
 

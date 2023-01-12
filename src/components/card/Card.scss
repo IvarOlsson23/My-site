@@ -6,8 +6,8 @@
   align-items: center;
   justify-content: center;
   gap: 50px;
+  height: 700px;
   max-width: 1500px;
-  margin-bottom: 200px;
 }
 
 .content {
@@ -15,12 +15,15 @@
   text-align: left;
   padding: 20px;
   @extend .font-package-body;
+
+  transform: translate(-90%);
 }
 
 .image {
   max-width: 40%;
   overflow: hidden;
   object-fit: contain;
+  transform: translate(90%);
 }
 
 .image img {

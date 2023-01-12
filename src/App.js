@@ -10,6 +10,7 @@ import CaseCardVariant from "./components/case-card-variant/CaseCardVariant";
 import Carousel from "./components/Carousel/Carousel";
 import Footer from "./components/footer/footer";
 import ScrollIndicator from "./components/scroll-indicator/ScrollIndicator";
+import Hero from "./components/hero/Hero";
 export const ThemeContext = createContext(null);
 function App() {
   const [theme, setTheme] = useState("dark");
@@ -20,26 +21,24 @@ function App() {
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div className="App" id={theme}>
-        <div id="stars"></div>
-        <div id="stars2"></div>
-        <div id="stars3"></div>
         <Nav></Nav>
-        <ScrollIndicator />
+        {/* <ScrollIndicator /> */}
         <div className="toggle-btn-div" onClick={toggleTheme}>
           <Button type="button" text="Toggle mode" />
         </div>
-        <section className="block-container" id="intro">
-          <Heading heading="well...Hello!" />
-          <Text
-            text1="tempor incididunt ut labore et doloreut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut labore et incididunt ut labore et doloreut labore et dolore magna aliqua. Ut enim ad minim veniamLorem ipsum dolor sit amet, consectetur adipiscing elit,"
-            text2="Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut labore et doloreut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut labore et doloreut labore et dolore magna aliqua. Ut enim ad minim veniamLorem ipsum dolor sit amet, consectetur adipiscing elit,"
-          />
-        </section>
-        <hr id="about-me" />
+        <Hero />
+        {/* <section
+          className="block-container"
+          id="intro"
+          style={{ position: "relative", zIndex: 2 }}
+        >
+          <Heading heading="Welcome to my World" />
+          <Text text="tempor incididunt ut labore et doloreut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit amet, " />
+        </section> */}
         <Card
           heading="Hello!"
           cardText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut labore et doloreut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut labore et doloreut labore et dolore magna aliqua. Ut enim ad minim veniamLorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut labore et doloreut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut labore et doloreut labore et dolore magna aliqua. Ut enim ad minim veniam"
-          imageSource={require("../src/assets/profile.jpg")}
+          imageSource={require("../src/assets/Cardheadshot.jpg")}
         />
 
         <section className="page-section-1" id="projects">
@@ -58,5 +57,4 @@ function App() {
     </ThemeContext.Provider>
   );
 }
-
 export default App;

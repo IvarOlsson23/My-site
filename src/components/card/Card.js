@@ -1,11 +1,22 @@
 import React from "react";
 import "./Card.scss";
+import { useState } from "react";
 import Heading from "../heading/Heading";
 
 const Card = (props) => {
+  const [slide, setSlide] = useState(false);
+
+  const textSlide = () => {
+    if (window.scrollY >= 100) {
+      setSlide(true);
+    } else {
+      setSlide(false);
+    }
+  };
+  window.addEventListener("scroll", textSlide);
   return (
     <div className="card">
-      <div className="content">
+      <div className={slide ? "content slide slide-active" : "content slide"}>
         <Heading heading={props.heading} />
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor
@@ -20,7 +31,7 @@ const Card = (props) => {
           veniam
         </p>
       </div>
-      <div className="image">
+      <div className={slide ? "image slide slide-active" : "image slide"}>
         <img className="card-image" src={props.imageSource} alt=""></img>
       </div>
     </div>

@@ -17,7 +17,6 @@ const ScrollIndicator = () => {
 
   return (
     <div className="container">
-      Depth
       <div className="progress" style={{ height: `${scroll}%` }}>
         <div className="scroll-number">{Math.floor(scroll)}</div>
       </div>

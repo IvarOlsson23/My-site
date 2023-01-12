@@ -44,7 +44,7 @@ $caption-line-height-mobile: 20px;
 $button-line-height-mobile: 14px;
 
 //font weight
-$heading-1-font-weight: 200;
+$heading-1-font-weight: 300;
 $heading-2-font-weight: 100;
 $heading-3-font-weight: 100;
 $body-font-weight: 200;
@@ -95,10 +95,16 @@ $button-letter-spacing-mobile: 6px;
   line-height: $heading-1-line-height;
 }
 
+/////////////////////
+///
+///
 html {
   scroll-behavior: smooth;
 }
 #root {
+  --swiper-theme-color: white;
+  --swiper-navigation-size: 44px;
+  --swiper-navigation-font-weight: 10px;
 }
 
 * {
@@ -117,31 +123,7 @@ body {
 #dark {
   color: white;
   text-align: center;
-
-  background: $RichBlack;
-  background: linear-gradient(
-    90deg,
-    $RichBlack 2%,
-    rgb(8, 12, 31) 20%,
-    rgb(12, 12, 24) 40%,
-    rgb(5, 10, 32) 50%,
-    rgb(5, 10, 32) 10%,
-    $RichBlack 100%
-  );
-
-  background-size: 300% 300%;
-  animation: gradient 10s ease infinite;
-}
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 100%;
-  }
+  background: radial-gradient(rgb(29, 29, 29) 0%, rgb(0, 0, 0) 99.4%);
 }
 
 #light {
@@ -151,8 +133,8 @@ body {
 
   background: radial-gradient(
     circle farthest-corner at 150% -50%,
-    #6fb4c0,
-    #3c8491,
+    #8be9fa,
+    #83e7f8,
     white,
     white,
     white
@@ -160,7 +142,6 @@ body {
 }
 
 #light hr {
-  margin: 150px;
   border: 0;
   height: 1px;
   background-image: linear-gradient(
@@ -172,7 +153,6 @@ body {
 }
 
 #dark hr {
-  margin: 150px;
   border: 0;
   height: 1px;
   background-image: linear-gradient(
@@ -192,11 +172,14 @@ body {
 }
 
 .block-container {
-  padding-top: 200px;
 }
 .toggle-btn-div {
   width: 200px;
+  height: 0px;
   margin: auto;
+  position: relative;
+  z-index: 3;
+  top: 530px;
 }
 a {
   text-decoration: none;
@@ -212,15 +195,15 @@ a:visited {
     color: white;
     min-height: 120vh;
     text-align: center;
-
-    background: radial-gradient(
-      circle farthest-corner at 300% -50%,
-      #e87258,
-      #8b4435,
-      $RichBlack,
-      $RichBlack,
-      $RichBlack
-    );
+    background: radial-gradient(rgb(29, 29, 29) 0%, rgb(0, 0, 0) 99.4%);
+    // background: radial-gradient(
+    //   circle farthest-corner at 300% -50%,
+    //   #e87258,
+    //   #8b4435,
+    //   $RichBlack,
+    //   $RichBlack,
+    //   $RichBlack
+    // );
   }
 
   #light {
@@ -238,6 +221,23 @@ a:visited {
     );
   }
 }
+
+//ANIMATIONS
+.slide-active {
+  display: block;
+  transition: 2s;
+  transform: translate(0%);
+  animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .toggle-btn-div {
     position: absolute;
@@ -268,4 +268,3 @@ a:visited {
     );
   }
 }
-
