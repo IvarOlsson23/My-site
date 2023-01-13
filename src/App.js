@@ -11,6 +11,7 @@ import Carousel from "./components/Carousel/Carousel";
 import Footer from "./components/footer/footer";
 import ScrollIndicator from "./components/scroll-indicator/ScrollIndicator";
 import Hero from "./components/hero/Hero";
+import Skills from "./components/Skills/Skills";
 export const ThemeContext = createContext(null);
 function App() {
   const [theme, setTheme] = useState("dark");
@@ -44,6 +45,7 @@ function App() {
         <section className="page-section-1" id="projects">
           <Carousel />
         </section>
+        <Skills />
         {/* <section className="page-section-2">
           <CaseCardVariant
             class="images"

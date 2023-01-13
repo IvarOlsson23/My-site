@@ -9,7 +9,7 @@ import CaseCard from "../case-card/CaseCard";
 
 const Carousel = () => {
   return (
-    <>
+    <div className="carousel-wrapper">
       <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
         <SwiperSlide>
           <CaseCard
@@ -39,7 +39,7 @@ const Carousel = () => {
           />
         </SwiperSlide>
       </Swiper>
-    </>
+    </div>
   );
 };
 

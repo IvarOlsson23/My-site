@@ -3,6 +3,11 @@
   justify-content: center;
   flex-direction: column;
   height: 600px;
+  background: rgb(255, 255, 255, 0.03);
+}
+
+#light .footer-wrapper {
+  background: rgb(255, 255, 255, 0.3);
 }
 
 .footer-content {
