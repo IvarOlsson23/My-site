@@ -12,11 +12,10 @@ const ScrollIndicator = () => {
     const ScrollPercent = (Scrolled / MaxHeight) * 100;
     setScroll(ScrollPercent);
   };
-  console.log(Math.floor(scroll));
   window.addEventListener("scroll", onScroll);
 
   return (
-    <div className="container">
+    <div className="scroll-wrapper">
       <div className="progress" style={{ height: `${scroll}%` }}>
         <div className="scroll-number">{Math.floor(scroll)}</div>
       </div>

@@ -7,8 +7,8 @@ const Footer = () => {
   return (
     <div className="footer-wrapper">
       <div className="footer-content">
-        <p>Contact me for work please!</p>
-        <p>Contact me for work please!</p>
+        <p>Anything else? Email me</p>
+        <p>ivar.olsson2323@gmail.com</p>
       </div>
       <div className="sm-symbols">
         <motion.a

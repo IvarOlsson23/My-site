@@ -29,7 +29,7 @@ $caption-font-size-mobile: 16px;
 $button-font-size-mobile: 12px;
 
 //line height
-$heading-1-line-height: 108px;
+$heading-1-line-height: 80px;
 $heading-2-line-height: 80px;
 $heading-3-line-height: 65px;
 $body-line-height: 20px;
@@ -121,27 +121,19 @@ body {
 }
 
 #dark {
-  color: white;
   text-align: center;
-  background: linear-gradient(
-    59deg,
-    rgb(3, 0, 14) 16%,
-    rgb(5, 5, 5) 60%,
-    rgb(5, 1, 12) 74%
-  );
+  color: white;
+  // background: linear-gradient(
+  //   59deg,
+  //   rgb(3, 0, 14) 16%,
+  //   rgb(5, 5, 5) 60%,
+  //   rgb(5, 1, 12) 74%
+  // );
 }
 
 #light {
   color: black;
-  min-height: 120vh;
   text-align: center;
-
-  background: linear-gradient(
-    59deg,
-    rgb(183, 200, 250) 16%,
-    rgb(226, 226, 226) 59%,
-    rgb(206, 206, 250) 74%
-  );
 }
 
 #light hr {
@@ -165,13 +157,13 @@ body {
     rgba(0, 0, 0, 0)
   );
 }
-.page-section-1 {
-}
 
-.page-section-2 {
-}
-
-.block-container {
+.carousel-with-heading {
+  background: rgb(255, 255, 255, 0.03);
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 .toggle-btn-div {
   width: 200px;
@@ -180,6 +172,14 @@ body {
   position: relative;
   z-index: 3;
   top: 530px;
+  animation: slideBottom 2s;
+}
+@keyframes slideBottom {
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+    display: block;
+  }
 }
 a {
   text-decoration: none;
@@ -190,6 +190,7 @@ a:visited {
 #light a:visited {
   color: rgb(0, 0, 0);
 }
+
 @media screen and (max-width: 900px) {
   #dark {
     color: white;

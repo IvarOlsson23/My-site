@@ -4,8 +4,10 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   gap: 35px;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 #light lable {
@@ -16,7 +18,6 @@
   width: 100px;
   height: 100px;
   margin: 10px;
-
   background-color: aquamarine;
   border-radius: 100%;
   display: flex;
@@ -25,6 +26,13 @@
   align-items: center;
   flex-direction: column;
   animation: pulse 2s infinite;
+}
+
+.spheres-wrapper {
+  display: flex;
+  width: 50%;
+
+  justify-content: space-evenly;
 }
 
 #light .hover-sphere {
@@ -52,6 +60,14 @@
 
   100% {
     transform: scale(0.95);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .spheres-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
   }
 }
 

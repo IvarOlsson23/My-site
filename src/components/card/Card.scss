@@ -7,16 +7,15 @@
   justify-content: center;
   gap: 50px;
   height: 700px;
-  max-width: 1500px;
 }
 
 .content {
   width: 500px;
   text-align: left;
   padding: 20px;
-  @extend .font-package-body;
-
   transform: translate(-90%);
+  opacity: 0;
+  @extend .font-package-body;
 }
 
 .image {
@@ -24,8 +23,12 @@
   overflow: hidden;
   object-fit: contain;
   transform: translate(90%);
+  opacity: 0;
 }
 
+.slide-active {
+  opacity: 1;
+}
 .image img {
   width: 100%;
 }

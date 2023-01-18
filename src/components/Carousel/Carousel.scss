@@ -1,19 +1,35 @@
 .swiper-button-next,
 .swiper-button-prev {
   color: white;
-  margin: 30px;
+  margin: 100px;
 }
 
 .carousel-wrapper {
   background: rgb(255, 255, 255, 0.03);
-  height: 700px;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 #light .carousel-wrapper {
   background: rgb(255, 255, 255, 0.3);
+  width: 100%;
 }
 
 #light .swiper-button-next,
 #light .swiper-button-prev {
   color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 900px) {
+  .carousel-wrapper {
+    height: 600px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: white;
+    margin: 10px;
+  }
 }

@@ -1,44 +1,46 @@
 @import "../../Theme.scss";
 
-.casecard {
-  height: 360px;
-  margin: auto;
+.casecard-wrapper {
   display: flex;
   justify-content: center;
-  margin-top: 130px;
-  margin-bottom: 130px;
-  gap: 100px;
+  align-items: center;
+  gap: 80px;
 }
 
 .casecard-images {
-  max-width: 700px;
   display: flex;
+  padding: 20px;
+  gap: 20px;
 }
 
 .casecard-content {
-  width: 500px;
+  width: 400px;
   text-align: left;
-  padding: 20px;
 }
 
 .casecard-images img {
-  height: 100%;
-  width: 100%;
-  margin: 20px;
   border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.8) 15px 5px 15px;
+  border: solid 7px rgb(8, 8, 8);
+}
+
+#light .casecard-images img {
   box-shadow: rgba(10, 10, 10, 0.8) 15px 5px 15px;
-  border: solid 6px rgb(12, 12, 12);
+  border: solid 7px rgb(20, 20, 20);
 }
 
 #casecard-image-left {
-  position: relative;
-  top: 40px;
+  width: 210px;
+  height: 380px;
+  margin: 40px 0 0 0;
+}
+#casecard-image-right {
+  width: 210px;
+  height: 380px;
 }
 
 @media screen and (max-width: 900px) {
-  .casecard {
-    height: 50%;
-    margin: auto;
+  .casecard-wrapper {
     display: flex;
     flex-direction: column;
     margin-top: 50px;
@@ -46,15 +48,19 @@
     gap: 50px;
   }
   .casecard-content {
-    width: 100%;
+    padding: 30px;
   }
   .casecard-images {
     display: flex;
     justify-content: center;
   }
-  .casecard-images img {
-    height: 40%;
-    width: 40%;
-    margin: 5px;
+
+  #casecard-image-left {
+    height: 260px;
+    width: 150px;
+  }
+  #casecard-image-right {
+    height: 260px;
+    width: 150px;
   }
 }

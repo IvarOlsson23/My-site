@@ -12,7 +12,7 @@ const items = [
   },
   {
     id: 2,
-    title: "Sass",
+    title: "CSS",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut",
     style: "#0B1013",
   },
@@ -34,27 +34,28 @@ const Skills = () => {
   return (
     <div className="skills-wrapper">
       <Heading heading="My skills" />
-
-      {items.map((items, index) => {
-        return (
-          <div key={index}>
-            <label className="skills-label" htmlFor="label">
-              {items.title}
-            </label>
-            <motion.div
-              whileHover={{
-                width: 300,
-                height: 300,
-                transition: { duration: 0.5 },
-              }}
-              style={{ background: `${items.style}` }}
-              className="hover-sphere"
-            >
-              <p className="sphere-desc">{items.desc}</p>
-            </motion.div>
-          </div>
-        );
-      })}
+      <div className="spheres-wrapper">
+        {items.map((items, index) => {
+          return (
+            <div key={index}>
+              <label className="skills-label" htmlFor="label">
+                {items.title}
+              </label>
+              <motion.div
+                whileHover={{
+                  width: 300,
+                  height: 300,
+                  transition: { duration: 0.5 },
+                }}
+                style={{ background: `${items.style}` }}
+                className="hover-sphere"
+              >
+                <p className="sphere-desc">{items.desc}</p>
+              </motion.div>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };
