@@ -1,19 +1,14 @@
 import "./Theme.scss";
 import { createContext, useState } from "react";
 import Button from "./components/button/Button";
-import Heading from "./components/heading/Heading";
-import Card from "./components/card/Card";
 import Nav from "./components/nav/Nav";
-import Text from "./components/text/Text";
-import CaseCard from "./components/case-card/CaseCard";
-import CaseCardVariant from "./components/case-card-variant/CaseCardVariant";
 import Carousel from "./components/Carousel/Carousel";
 import Footer from "./components/footer/footer";
 import ScrollIndicator from "./components/scroll-indicator/ScrollIndicator";
 import Hero from "./components/hero/Hero";
 import Skills from "./components/Skills/Skills";
 import Background from "./components/Background/Background";
-import ShowOff from "./components/ShowOff/ShowOff";
+import Heading2 from "./components/heading/Heading2";
 export const ThemeContext = createContext(null);
 function App() {
   const [theme, setTheme] = useState("dark");
@@ -28,37 +23,20 @@ function App() {
         <Nav></Nav>
         <ScrollIndicator />
         <div className="toggle-btn-div" onClick={toggleTheme}>
-          <Button type="button" text="Toggle mode" />
+          <Button text="Toggle mode" />
         </div>
+        <div id="hero"></div>
         <Hero />
-        {/* <section
-          className="block-container"
-          id="intro"
-          style={{ position: "relative", zIndex: 2 }}
-        >
-          <Heading heading="Welcome to my World" />
-          <Text text="tempor incididunt ut labore et doloreut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit amet, " />
-        </section> */}
-        <Card
-          heading="Hello!"
-          imageSource={require("../src/assets/Cardheadshot.jpg")}
-        />
-        {/* <ShowOff /> */}
 
+        <div id="Projects"></div>
         <div className="carousel-with-heading">
-          <Heading heading="Some of my projects" />
+          <Heading2 heading="Some of my projects" />
         </div>
         <Carousel />
-
+        <div id="Skills"></div>
         <Skills />
-        {/* <section className="page-section-2">
-          <CaseCardVariant
-            class="images"
-            heading="Hello!"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-            imageSource={require("../src/assets/case1.png")}
-          />
-        </section> */}
+
+        <div id="Contact"></div>
         <Footer />
       </div>
     </ThemeContext.Provider>

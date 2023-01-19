@@ -27,17 +27,16 @@ const Nav = () => {
   return (
     <div className="nav-wrapper">
       <div className={nav ? "nav active" : "nav"} ref={navRef}>
-        <div alt="logo" className="logo" />
+        <div alt="logo" className="logo" href="" />
+
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <FaTimes />
         </button>
         <ul className="nav-buttons">
           <a href="#about-me">About me</a>
-          <a href="#about-me">Portfolio</a>
-          <a href="#about-me">Contact</a>
-          {/* <div className="toggle-btn-div" onClick={toggleTheme}>
-            <Button type="button" text="Toggle mode" />
-          </div> */}
+          <a href="#Projects">Projects</a>
+          <a href="#Skills">Skills</a>
+          <a href="#Contact">Contact</a>
         </ul>
       </div>
       <button

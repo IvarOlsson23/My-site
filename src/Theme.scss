@@ -95,9 +95,12 @@ $button-letter-spacing-mobile: 6px;
   line-height: $heading-1-line-height;
 }
 
-/////////////////////
-///
-///
+.font-package-heading2 {
+  font-size: $heading-2-font-size;
+  font-weight: $heading-2-font-weight;
+  line-height: $heading-2-line-height;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -106,29 +109,19 @@ html {
   --swiper-navigation-size: 44px;
   --swiper-navigation-font-weight: 10px;
 }
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Sora", sans-serif;
 }
-
-body {
-}
-
-.App {
+p {
+  @extend .font-package-body;
 }
 
 #dark {
   text-align: center;
   color: white;
-  // background: linear-gradient(
-  //   59deg,
-  //   rgb(3, 0, 14) 16%,
-  //   rgb(5, 5, 5) 60%,
-  //   rgb(5, 1, 12) 74%
-  // );
 }
 
 #light {
@@ -165,13 +158,22 @@ body {
   justify-content: center;
   align-items: flex-end;
 }
+
+#light .carousel-with-heading {
+  background: rgb(255, 255, 255, 0.3);
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
 .toggle-btn-div {
   width: 200px;
   height: 0px;
   margin: auto;
   position: relative;
   z-index: 3;
-  top: 530px;
+  top: 580px;
   animation: slideBottom 2s;
 }
 @keyframes slideBottom {
@@ -196,30 +198,12 @@ a:visited {
     color: white;
     min-height: 120vh;
     text-align: center;
-    background: radial-gradient(rgb(29, 29, 29) 0%, rgb(0, 0, 0) 99.4%);
-    // background: radial-gradient(
-    //   circle farthest-corner at 300% -50%,
-    //   #e87258,
-    //   #8b4435,
-    //   $RichBlack,
-    //   $RichBlack,
-    //   $RichBlack
-    // );
   }
 
   #light {
     color: black;
     min-height: 120vh;
     text-align: center;
-
-    background: radial-gradient(
-      circle farthest-corner at 150% -50%,
-      #6fb4c0,
-      #3c8491,
-      white,
-      white,
-      white
-    );
   }
 }
 

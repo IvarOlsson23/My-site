@@ -11,3 +11,15 @@
     font-size: 52px;
   }
 }
+
+.heading2 {
+  position: relative;
+  z-index: 2;
+  @extend .font-package-heading2;
+}
+
+@media screen and (max-width: 900px) {
+  .heading2 {
+    font-size: 52px;
+  }
+}

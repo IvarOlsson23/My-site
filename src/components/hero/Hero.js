@@ -9,10 +9,8 @@ const Hero = () => {
     <div className="hero-wrapper">
       <div className="hero-content">
         <div className="hero-heading">
-          <Heading
-            heading="Frontend development, By Ivar Olsson"
-            style={{ position: "relative", zIndex: 2 }}
-          />
+          <Heading heading="Frontend development" />
+          <Heading heading="By Ivar Olsson" />
         </div>
         <div className="hero-text">
           <Text text="With a passion for creativity and technical solutions. I just wanna make cool and functional stuff on the web" />

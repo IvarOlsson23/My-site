@@ -1,14 +1,14 @@
 import React from "react";
 import "./CaseCard.scss";
-import Heading from "../heading/Heading";
-import Text from "../text/Text";
+import Heading2 from "../heading/Heading2";
 
 const CaseCard = (props) => {
   return (
     <div className="casecard-wrapper">
       <div className="casecard-content">
-        <Heading className="casecard-heading" heading={props.heading} />
+        <Heading2 className="casecard-heading" heading={props.heading} />
         <p>{props.text}</p>
+        <a href={props.repo}>{props.repoText}</a>
       </div>
       <div className="casecard-images">
         <img id="casecard-image-left" src={props.imageSource1} alt=""></img>

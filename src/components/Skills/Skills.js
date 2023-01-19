@@ -1,56 +1,98 @@
 import { React } from "react";
 import "./Skills.scss";
 import { motion } from "framer-motion";
-import Heading from "../heading/Heading";
+import Heading2 from "../heading/Heading2";
 
 const items = [
   {
     id: 1,
     title: "HTML",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut",
-    style: "#151A35",
+    style: "#F16529",
   },
   {
     id: 2,
     title: "CSS",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut",
-    style: "#0B1013",
+    style: "#0070BA",
   },
   {
     id: 3,
     title: "Javascript",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut",
-    style: "#1B3C24",
+    style: "#F7D238",
   },
   {
     id: 4,
     title: "React.js",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut",
-    style: "#281b1c",
+    style: "#5ED3F3",
+  },
+];
+const items2 = [
+  {
+    id: 1,
+    title: "Tailwind.css",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut",
+    style: "#42A7B3",
+  },
+  {
+    id: 2,
+    title: "Storybook",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut",
+    style: "#F74581",
+  },
+  {
+    id: 3,
+    title: "Figma",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut",
+    style: "#9D56F7",
+  },
+  {
+    id: 4,
+    title: "Node.js",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut",
+    style: "#6AA05C",
   },
 ];
 
 const Skills = () => {
   return (
     <div className="skills-wrapper">
-      <Heading heading="My skills" />
+      <Heading2 heading="My skills" />
       <div className="spheres-wrapper">
         {items.map((items, index) => {
           return (
             <div key={index}>
-              <label className="skills-label" htmlFor="label">
-                {items.title}
-              </label>
               <motion.div
                 whileHover={{
-                  width: 300,
-                  height: 300,
+                  width: 150,
+                  height: 150,
                   transition: { duration: 0.5 },
                 }}
                 style={{ background: `${items.style}` }}
                 className="hover-sphere"
               >
-                <p className="sphere-desc">{items.desc}</p>
+                <p className="sphere-desc">{items.title}</p>
+              </motion.div>
+            </div>
+          );
+        })}
+      </div>
+      <div className="spheres-wrapper2">
+        {items2.map((items, index) => {
+          return (
+            <div key={index}>
+              <motion.div
+                whileHover={{
+                  width: 120,
+                  height: 120,
+                  transition: { duration: 0.5 },
+                }}
+                style={{ background: `${items.style}` }}
+                className="hover-sphere2"
+              >
+                <p className="sphere-desc">{items.title}</p>
               </motion.div>
             </div>
           );

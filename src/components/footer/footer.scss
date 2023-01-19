@@ -20,6 +20,10 @@
   filter: drop-shadow(0px 0px 3px #ffffff);
 }
 
+#light .footer-content {
+  filter: drop-shadow(0px 0px 3px #000000);
+}
+
 .sm-symbols {
   display: flex;
   justify-content: center;

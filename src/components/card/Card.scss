@@ -10,7 +10,7 @@
 }
 
 .content {
-  width: 500px;
+  width: 550px;
   text-align: left;
   padding: 20px;
   transform: translate(-90%);
@@ -18,19 +18,39 @@
   @extend .font-package-body;
 }
 
-.image {
-  max-width: 40%;
-  overflow: hidden;
-  object-fit: contain;
+.computer {
+  background-color: rgb(2, 2, 2);
+  box-shadow: 15px 10px 15px rgb(0, 0, 0);
+  width: 400px;
+  height: 250px;
+  border: 3mm ridge rgba(22, 19, 19, 0.6);
+  display: inline-block;
   transform: translate(90%);
-  opacity: 0;
+}
+#light .computer {
+  border: 3mm ridge rgba(255, 255, 255, 0.6);
 }
 
+.typed-out {
+  font-size: 0.3em;
+  color: rgb(116, 211, 240);
+  margin: 1rem;
+  width: 80%;
+}
+
+// .image {
+//   max-width: 40%;
+//   overflow: hidden;
+//   object-fit: contain;
+//   transform: translate(90%);
+//   opacity: 0;
+// }
+
+// .image img {
+//   width: 100%;
+// }
 .slide-active {
   opacity: 1;
-}
-.image img {
-  width: 100%;
 }
 
 @media screen and (max-width: 800px) {
@@ -45,7 +65,8 @@
     align-items: left;
     width: 300px;
   }
-  .image {
-    min-width: 330px;
+  .computer {
+    width: 300px;
+    height: 200px;
   }
 }

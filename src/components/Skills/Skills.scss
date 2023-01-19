@@ -10,10 +10,6 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
-#light lable {
-  color: white;
-}
-
 .hover-sphere {
   width: 100px;
   height: 100px;
@@ -26,26 +22,43 @@
   align-items: center;
   flex-direction: column;
   animation: pulse 2s infinite;
+  box-shadow: 4px 9px 20px rgb(0, 0, 0), inset 0 4px 10px #ffffff;
+}
+.hover-sphere2 {
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+  background-color: aquamarine;
+  border-radius: 100%;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: pulse 2s infinite;
+  box-shadow: 4px 9px 20px rgb(0, 0, 0), inset 0 4px 10px #ffffff;
+}
+
+#light .hover-sphere {
+  box-shadow: 4px 9px 20px rgb(53, 53, 53), inset 0 4px 10px #ffffff;
+}
+#light .hover-sphere2 {
+  box-shadow: 4px 9px 20px rgb(53, 53, 53), inset 0 4px 10px #ffffff;
 }
 
 .spheres-wrapper {
   display: flex;
   width: 50%;
+  justify-content: space-evenly;
+}
+.spheres-wrapper2 {
+  display: flex;
+  width: 30%;
 
   justify-content: space-evenly;
 }
 
-#light .hover-sphere {
-  color: white;
-}
-
-.skills-label {
-  font-size: 20px;
-  filter: drop-shadow(0px 0px 3px #ffffff);
-  @extend .font-package-button;
-}
-
-#light .skills-label {
+.sphere-desc {
   filter: drop-shadow(0px 0px 3px #000000);
 }
 
@@ -64,10 +77,19 @@
 }
 
 @media screen and (max-width: 800px) {
+  .skills-wrapper {
+    height: 650px;
+  }
+
   .spheres-wrapper {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+  }
+  .spheres-wrapper2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
   }
 }
 
