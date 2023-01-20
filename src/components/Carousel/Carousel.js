@@ -9,7 +9,6 @@ import CaseCard from "../case-card/CaseCard";
 const Carousel = () => {
   return (
     <div className="carousel-wrapper">
-      {/* <Heading heading="Some of my" /> */}
       <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
         <SwiperSlide>
           <CaseCard

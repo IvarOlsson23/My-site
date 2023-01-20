@@ -19,8 +19,8 @@ const Card = (props) => {
 
   return (
     <div className="card">
-      <div className={slide ? "content slide slide-active" : "content slide"}>
-        <Heading2 heading={props.heading} />
+      <div className={slide ? "content slide-active" : "content slide"}>
+        <Heading2 heading="Hello!" />
         <p>
           I started my professional journey down the frontend development rabbit
           hole about 2 and a half years ago. I always strive to always learn
@@ -105,7 +105,3 @@ const Card = (props) => {
 };
 
 export default Card;
-
-{
-  /* <img className="card-image" src={props.imageSource} alt=""></img> */
-}

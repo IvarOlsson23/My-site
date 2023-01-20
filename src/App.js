@@ -9,6 +9,7 @@ import Hero from "./components/hero/Hero";
 import Skills from "./components/Skills/Skills";
 import Background from "./components/Background/Background";
 import Heading2 from "./components/heading/Heading2";
+import Card from "./components/card/Card";
 export const ThemeContext = createContext(null);
 function App() {
   const [theme, setTheme] = useState("dark");
@@ -27,7 +28,7 @@ function App() {
         </div>
         <div id="hero"></div>
         <Hero />
-
+        <Card />
         <div id="Projects"></div>
         <div className="carousel-with-heading">
           <Heading2 heading="Some of my projects" />
