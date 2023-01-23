@@ -28,7 +28,9 @@ function App() {
         </div>
         <div id="hero"></div>
         <Hero />
-        <Card />
+        <div id="about-me">
+          <Card />
+        </div>
         <div id="Projects"></div>
         <div className="carousel-with-heading">
           <Heading2 heading="Some of my projects" />
