@@ -1,27 +1,27 @@
 .background {
-  z-index: -1;
   color: white;
-  background: linear-gradient(
-    59deg,
-    rgb(0, 0, 0) 16%,
-    rgb(15, 15, 15) 60%,
-    rgb(0, 0, 0) 74%
-  );
+  // background: url(../../assets/bg-illu.png) no-repeat center, #070706;
   height: 100vh;
-  width: 100vw;
   position: fixed;
+  width: 100%;
+  z-index: -1;
   top: 0;
-  left: 0;
 }
 
-#light .background {
-  background: linear-gradient(
-    59deg,
-    rgb(183, 200, 250) 16%,
-    rgb(226, 226, 226) 59%,
-    rgb(206, 206, 250) 74%
-  );
+#bg1 {
+  background: url(../../assets/bg-illu.png) no-repeat center, #070706;
+  height: 100%;
 }
+// #bg2 {
+//   background: url(../../assets/bg2-parallax-dark.png) no-repeat center;
+
+//   height: 100%;
+// }
+// #bg3 {
+//   background: url(../../assets/bg3-parallax-dark.png) no-repeat center;
+
+//   height: 100%;
+// }
 
 @media screen and (max-width: 600px) {
 }

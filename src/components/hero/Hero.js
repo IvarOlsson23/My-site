@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import "./Hero.scss";
 import Heading from "../heading/Heading";
 import Text from "../text/Text";
@@ -16,7 +15,6 @@ const Hero = () => {
           <Text text="With a passion for creativity and technical solutions. I just wanna make cool and functional stuff on the web" />
         </div>
       </div>
-      <hr className="hero-hr" />
     </div>
   );
 };

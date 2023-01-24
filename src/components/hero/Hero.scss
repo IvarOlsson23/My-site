@@ -1,26 +1,24 @@
 @import "../../Theme.scss";
 
 .hero-wrapper {
-  background: url(../../assets/profileDark.jpg) no-repeat center;
-  height: 950px;
+  height: 900px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  width: 100%;
-  gap: 100px;
+  justify-content: center;
 }
 
+.hero-content {
+  margin-top: 210px;
+}
 .hero-text {
   animation: slideRight 3s;
 }
 
 .hero-heading {
   animation: slideLeft 3s;
-  margin-bottom: 20px;
+  margin-bottom: 100px;
 }
 
 #light .hero-wrapper {
-  background: url(../../assets/profileLight.jpg) no-repeat;
 }
 
 @keyframes slideRight {
@@ -39,7 +37,6 @@
 
 @media screen and (max-width: 600px) {
   .hero-wrapper {
-    background: url(../../assets/profileDark.jpg) no-repeat center;
     height: 700px;
     display: flex;
     flex-direction: column;
@@ -49,10 +46,9 @@
   }
 }
 
-#light .hero-wrapper {
-  background: url(../../assets/profileLight.jpg) no-repeat center;
-}
+// #light .hero-wrapper {
+//   background: url(../../assets/bg-illu-light.png) no-repeat center;
+// }
 
 .hero-content {
-  margin: 150px 30px 0 30px;
 }
