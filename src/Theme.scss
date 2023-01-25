@@ -21,8 +21,8 @@ $body-font-size: 16px;
 $caption-font-size: 16px;
 $button-font-size: 14px;
 //Mobile
-$heading-1-font-size-mobile: 86px;
-$heading-2-font-size-mobile: 64px;
+$heading-1-font-size-mobile: 82px;
+$heading-2-font-size-mobile: 62px;
 $heading-3-font-size-mobile: 52px;
 $body-font-size-mobile: 16px;
 $caption-font-size-mobile: 16px;
@@ -30,7 +30,7 @@ $button-font-size-mobile: 12px;
 
 //line height
 $heading-1-line-height: 80px;
-$heading-2-line-height: 80px;
+$heading-2-line-height: 70px;
 $heading-3-line-height: 65px;
 $body-line-height: 20px;
 $caption-line-height: 20px;
@@ -44,12 +44,12 @@ $caption-line-height-mobile: 20px;
 $button-line-height-mobile: 14px;
 
 //font weight
-$heading-1-font-weight: 300;
-$heading-2-font-weight: 100;
+$heading-1-font-weight: 500;
+$heading-2-font-weight: 400;
 $heading-3-font-weight: 100;
-$body-font-weight: 200;
+$body-font-weight: 300;
 $caption-font-weight: 400;
-$button-font-weight: 200;
+$button-font-weight: 300;
 //Mobile
 $heading-1-font-weight-mobile: 100;
 $heading-2-font-weight-mobile: 100;
@@ -100,7 +100,8 @@ $button-letter-spacing-mobile: 6px;
   font-weight: $heading-2-font-weight;
   line-height: $heading-2-line-height;
 }
-
+body {
+}
 html {
   scroll-behavior: smooth;
 }
@@ -173,7 +174,7 @@ p {
   margin: auto;
   position: relative;
   z-index: 3;
-  top: 580px;
+  top: 600px;
   animation: slideBottom 2s;
 }
 @keyframes slideBottom {

@@ -1,7 +1,7 @@
 .swiper-button-next,
 .swiper-button-prev {
   color: white;
-  margin: 180px;
+  margin: 160px;
 }
 
 .carousel-wrapper {
@@ -25,7 +25,7 @@
 
 @media screen and (max-width: 900px) {
   .carousel-wrapper {
-    height: 600px;
+    height: 700px;
   }
   #light .carousel-wrapper {
     background: rgb(255, 255, 255, 0.3);
@@ -34,6 +34,7 @@
   .swiper-button-next,
   .swiper-button-prev {
     color: white;
-    margin: 10px;
+    margin: 10px 10px 10px 10px;
+    top: 45% !important;
   }
 }

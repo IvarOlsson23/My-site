@@ -3,7 +3,6 @@
 .nav-wrapper {
   display: flex;
   justify-content: center;
-  z-index: 4;
 }
 .nav {
   width: 80%;
@@ -23,10 +22,17 @@
   );
   border-image-slice: 1;
   transition: 2s;
+  z-index: 20;
+}
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
 }
 
 .active {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.8);
   position: fixed;
   transition: 2s;
   transform: translate(3%, -5%);
@@ -85,12 +91,7 @@
 
 #light .nav {
   border-bottom: 1px solid transparent;
-  border-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 0.75),
-    rgba(0, 0, 0, 0)
-  );
+
   border-image-slice: 1;
 }
 
@@ -111,7 +112,7 @@
     position: relative;
     transform: translateX(100%);
     transition: 1s;
-    background: rgba(12, 14, 19, 0.99);
+    background: #070706;
   }
   #light .nav {
     background: rgba(255, 255, 255, 0.99);

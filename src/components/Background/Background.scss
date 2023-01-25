@@ -12,16 +12,11 @@
   background: url(../../assets/bg-illu.png) no-repeat center, #070706;
   height: 100%;
 }
-// #bg2 {
-//   background: url(../../assets/bg2-parallax-dark.png) no-repeat center;
 
-//   height: 100%;
-// }
-// #bg3 {
-//   background: url(../../assets/bg3-parallax-dark.png) no-repeat center;
-
-//   height: 100%;
-// }
+#light #bg1 {
+  background: url(../../assets/bg-illu-light.png) no-repeat center, #f8f8f9;
+  height: 100%;
+}
 
 @media screen and (max-width: 600px) {
 }

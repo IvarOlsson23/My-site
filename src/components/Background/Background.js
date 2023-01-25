@@ -8,7 +8,7 @@ const Background = () => {
     const MaxHeight =
       document.documentElement.scrollHeight -
       document.documentElement.clientHeight;
-    const ScrollPercent = (Scrolled / MaxHeight) * 100;
+    const ScrollPercent = (Scrolled / MaxHeight) * 500;
     bgRef.current.style.backgroundPositionY = `-${ScrollPercent}%`;
   };
 

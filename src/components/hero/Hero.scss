@@ -1,13 +1,13 @@
 @import "../../Theme.scss";
 
 .hero-wrapper {
-  height: 900px;
+  height: 800px;
   display: flex;
   justify-content: center;
 }
 
 .hero-content {
-  margin-top: 210px;
+  margin-top: 270px;
 }
 .hero-text {
   animation: slideRight 3s;
@@ -15,7 +15,7 @@
 
 .hero-heading {
   animation: slideLeft 3s;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 
 #light .hero-wrapper {
@@ -42,7 +42,10 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    gap: 0px;
+  }
+
+  .hero-content {
+    margin-top: 80px;
   }
 }
 
